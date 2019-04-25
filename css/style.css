@@ -81,7 +81,7 @@ nav{
 }
 
 .specialize-container{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
@@ -275,6 +275,185 @@ footer h4{
 }
 
 
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .works{
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header-container a {
+        margin-right: 20px;
+        padding: 6px 6px;
+    }
+    .top-slide{
+        padding-top: 30px;
+        padding-bottom: 65px;
+    }
+    .top-slide h2{
+        font-size: 45px;
+    }
+    .top-slide p {
+        font-size: 20px;
+    }
+    .specialize-cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .last_card{
+        grid-column-start: 2;
+    }
+    .works {
+        width: 100%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto auto;
+        grid-row-gap: 15px;
+    }
+    .footer-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+
+
+
+
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-container a {
+        margin-right: 20px;
+        padding: 6px 6px;
+    }
+    .top-slide{
+        padding-top: 30px;
+        padding-bottom: 65px;
+    }
+    .top-slide h2{
+        font-size: 45px;
+    }
+    .top-slide p {
+        font-size: 20px;
+    }
+    .specialize-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .works {
+        width: 100%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: auto auto;
+        grid-row-gap: 15px;
+    }
+    .footer-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .header-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-menu{
+        display: none;
+    }
+    .main-menu li{
+        width: 100%;
+        display: block;
+        font-size: 12px;
+    }
+    .main-menu a{
+        display: block;
+        padding: 8px;
+    }
+    .toggle-button{
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: #000;
+    }
+
+    .toggle-button:after{
+        content: attr(data-open);
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu{
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
+        content: attr(data-close);
+    }
+    .header-container a{
+        margin-right: -90px;
+        text-align: right;
+    }
+    .main-menu{
+        position: relative;
+        top: 30px;
+        right: 80px;
+    }
+    .top-slide{
+        background-size: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .top-slide h2{
+        font-size: 36px;
+    }
+    .top-slide p{
+        font-size:22px;
+    }
+    .top-slide div{
+        margin-bottom: 5px;
+    }
+    .specialize-cards p{
+        margin-bottom: 0;
+    }
+
+    .specialize-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .specialize-container{
+        width: 100%;
+    }
+    .card {
+        width: auto;
+    }
+    .works{
+        grid-template-columns: auto;
+    }
+    .footer-container{
+        grid-template-columns: auto auto;
+    }
+    .images{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+    .partners{
+        grid-template-columns: auto auto auto;
+    }
+}
 
 
 
@@ -287,8 +466,7 @@ footer h4{
 
 
 
-
-@media screen and ( max-width: 420px){
+@media screen and ( max-width: 480px){
     .header-container{
         width: 100%;
         display: flex;
@@ -333,8 +511,6 @@ footer h4{
         right: 80px;
     }
 
-    
-
     .top-slide{
         background-size: auto;
         padding-top: 40px;
@@ -349,6 +525,9 @@ footer h4{
 
     .specialize-container p{
         font-size: 16px;
+    }
+    .card{
+        margin: 0 auto;
     }
     .specialize-cards{
         display: flex;
